@@ -1,9 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBF7ZZ0XtVxRLm0l9StUdexZt8F7iIzTZc",
-    authDomain: "tourist-website-c20e0.firebaseapp.com",
-    projectId: "tourist-website-c20e0",
-    storageBucket: "tourist-website-c20e0.appspot.com",
-    messagingSenderId: "540100434092",
-    appId: "1:540100434092:web:63b1ad96688b1a4d65a709"
+    apiKey: "AIzaSyDtjxKbxa47ZNdK51LG4kONVEsQY6_aCuc",
+    authDomain: "loan-dee13.firebaseapp.com",
+    projectId: "loan-dee13",
+    storageBucket: "loan-dee13.appspot.com",
+    messagingSenderId: "152875065279",
+    appId: "1:152875065279:web:53a4307c6f23e501770b0a"
 };
+
 export default firebaseConfig;

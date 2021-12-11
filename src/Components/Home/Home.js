@@ -1,13 +1,17 @@
 import React from 'react';
-import Banner from '../Banner/Banner';
-
-import Services from '../Services/Services';
+import bgg from '../../img/bgg.jpg'
+import Plus from '../Plus/Plus';
 
 const Home = () => {
     return (
-        <div id="home">
-            <Banner></Banner>
-            <Services></Services>
+        <div id="home" style={{
+            backgroundImage: `url(${bgg})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: "cover",
+            height: "110vh",
+            marginBottom: 0
+        }}>
+
 
         </div>
     );

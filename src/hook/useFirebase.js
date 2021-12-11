@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react"
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, } from "firebase/auth";
 import initializeAuthentication from './../Firebase/firebase.init';
-import { useHistory } from "react-router";
+
 
 initializeAuthentication();
 const useFirebase = () => {
-    const { location: { state }, push } = useHistory();
 
-
-    const redirectRoute = state?.from || '/'
 
     const [user, setUser] = useState(null);
     const [error, setError] = useState('');
@@ -36,49 +33,10 @@ const useFirebase = () => {
     const toggleLogin = e => {
         setIsLogin(e.target.checked);
     }
-    const handleEmail = e => {
-        setEmail(e.target.value);
-    }
-    const handlePass = e => {
-        setPassword(e.target.value);
-    }
-
-    const signInUsingEmail = e => {
-        e.preventDefault();
-        console.log(email, password);
-        if (password.length < 6) {
-            setError('Password must be 6 character')
-            return;
-        }
-        isLogin ? processLogin(email, password) : createNewUser(email, password)
-
-    }
-    const processLogin = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-                setError('');
 
 
-            })
-            .catch(error => {
-                setError(error.message)
-            })
-    }
-    const createNewUser = (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-                setError('');
 
 
-            })
-            .catch(error => {
-                setError(error.message)
-            })
-    }
 
 
     const logOut = () => {
@@ -98,14 +56,6 @@ const useFirebase = () => {
             }
         })
     }, [auth])
-    useEffect
-        (() => {
-            if (!user) return
-
-
-
-            push(redirectRoute)
-        }, [push, redirectRoute, user])
 
     return {
         user,
@@ -114,9 +64,7 @@ const useFirebase = () => {
         password,
         isLogin,
         signInUsingGoole,
-        handleEmail,
-        handlePass,
-        signInUsingEmail,
+
 
         toggleLogin,
         logOut
