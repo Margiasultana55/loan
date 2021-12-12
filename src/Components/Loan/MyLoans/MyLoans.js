@@ -20,7 +20,7 @@ const MyLoans = () => {
     //get products
     useEffect(() => {
 
-        fetch("http://localhost:5000/loans")
+        fetch("https://limitless-sierra-06258.herokuapp.com/loans")
             .then(res => res.json())
             .then(data => {
                 const service = data.filter(data => data.email === user?.email);
@@ -38,7 +38,7 @@ const MyLoans = () => {
         // console.log(id);
         const proceed = window.confirm('Are you sure, you want to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/loans/${id}`;
+            const url = `https://limitless-sierra-06258.herokuapp.com/loans/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
@@ -57,7 +57,7 @@ const MyLoans = () => {
         <div>
 
 
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} style={{ marginBottom: '10rem' }}>
                 <Table sx={{}} aria-label="simple table">
                     <TableHead>
                         <TableRow>

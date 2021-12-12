@@ -39,7 +39,7 @@ const PlusModal = ({ open, handleClose }) => {
 
         }
         //send data to server
-        fetch('http://localhost:5000/loans', {
+        fetch('https://limitless-sierra-06258.herokuapp.com/loans', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

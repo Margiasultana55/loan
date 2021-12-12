@@ -18,7 +18,7 @@ const Details = () => {
     //get products
     useEffect(() => {
 
-        fetch("http://localhost:5000/loans")
+        fetch("https://limitless-sierra-06258.herokuapp.com/loans")
             .then(res => res.json())
             .then(data => {
                 const service = data.filter(data => data._id === serviceId);
@@ -35,18 +35,11 @@ const Details = () => {
 
     return (
         <div
-            id="home" style={{
-                backgroundImage: `url(${bgg})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: "cover",
-                height: "110vh",
-                marginBottom: 0
-            }}
         >
 
             <Container style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', }}>
 
-                {loanDetail.map((detail) => (<form key={detail._id} style={{ marginTop: '9rem', width: "30rem", backgroundColor: 'white', padding: '1rem', borderRadius: '22px', boxShadow: '2px 2px 18px  rgb(25, 219, 209)', color: 'black' }} >
+                {loanDetail.map((detail) => (<form key={detail._id} style={{ marginTop: '9rem', width: "30rem", backgroundColor: 'white', padding: '1rem', borderRadius: '22px', boxShadow: '2px 2px 18px  rgb(25, 219, 209)', color: 'black', }} >
 
 
                     <TextField

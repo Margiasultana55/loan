@@ -10,12 +10,18 @@ import NotFound from './Components/NotFound/NotFound';
 import Plus from './Components/Plus/Plus';
 import Dashboard from './Components/Loan/Dashboard/Dashboard';
 import Details from './Components/Loan/Details/Details';
-
+import bgg from './img/bgg.jpg'
 
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App" style={{
+      backgroundImage: `url(${bgg})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: "cover",
+      height: "100%",
+      marginBottom: 0
+    }}>
 
 
       <BrowserRouter>
@@ -36,10 +42,12 @@ function App() {
 
             <Route path="/loan">
               <Dashboard></Dashboard>
+
             </Route>
 
             <Route path="/detail/:serviceId">
               <Details></Details>
+              <Footer></Footer>
             </Route>
 
 

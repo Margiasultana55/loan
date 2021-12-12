@@ -12,7 +12,9 @@
        display: inline-block;
    }
    .navbar{
-       background-color: rgba(54, 54, 54, 0.911);
+    background-color: #040404ad;
+
+  
        
    }
    .my-btn{

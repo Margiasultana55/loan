@@ -15,7 +15,7 @@ const Plus = () => {
 
     return (
         <>
-            <div style={{ marginTop: '-16rem', display: 'flex', justifyContent: 'flex-end', marginRight: '20px' }}>
+            <div style={{ marginTop: '10rem', display: 'flex', justifyContent: 'flex-end', marginRight: '20px' }}>
                 <Button onClick={handleOpen} variant="contained" className=' text-white  ' style={{ background: 'none', border: 'none', textShadow: '2px 7px 33px rgb(10, 155, 212)', }} ><i style={{ fontSize: '40px', marginBottom: '20px' }} className="fas fa-plus-circle"  ></i></Button>
 
             </div>

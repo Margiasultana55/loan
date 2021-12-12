@@ -14,35 +14,25 @@ const Header = () => {
         <div>
             <>
                 <Navbar variant="dark" collapseOnSelect expand="lg" className='navbar '>
-
-                    <Navbar.Brand href="/home">
-                        <img
-                            src={logo}
-                            width="37"
-                            height="37"
-
-                            className="d-inline-block align-top ms-5"
-                            alt="React Bootstrap logo"
-                        />
-                    </Navbar.Brand>
-
                     <Navbar.Toggle />
                     <Navbar.Collapse className="ms-3">
+                        <Navbar.Brand href="/home">
+                            <img
+                                src={logo}
+                                width="37"
+                                height="37"
 
+                                className="d-inline-block align-top ms-5"
+                                alt="React Bootstrap logo"
+                            />
 
-
+                        </Navbar.Brand>
 
 
 
 
                         {user?.email && <Nav.Link as={Link} to="/loan" className='nav-link '
                             style={{ fontWeight: 'bold' }}>Dashboard</Nav.Link>}
-
-
-
-
-
-
 
                     </Navbar.Collapse>
 
@@ -57,7 +47,6 @@ const Header = () => {
                             <button onClick={signInUsingGoole} className='my-btn google p-1 px-3 mt-1 mb-1 me-3'>Signin with <FaGoogle size='17px' /></button>
                         </div >
                     }
-
 
 
 

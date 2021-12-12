@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "tourist-website-c20e0"
-  }
+    "default": "loan-dee13",
+    "loan-dee13": "loan-dee13"
+  },
+  "targets": {}
 }

@@ -1,18 +1,15 @@
 ## Description 
-- Tourist.com
+- Baniking.com
 
-- This website presents you a tourism website.
+- This website presents you a Banking website.
 
--  From the homepage you'll get to explore the whole system. You can know about our location, our services, our info and so on.
+-  From the homepage you'll get to explore the whole system. You can apply for leoan click the plus button .
 
 
-- We'll also provide you the package details right there so that you can have a clear idea. 
-
-- You will be also able to create your own profile there to keep track you can also login with google buy package which you want and also manage your ordes and also add new services.
-
+- When you login with google you will see your dashboard.there you can see your applying loan their details, you can withdraw your loan application by using your withdraw button and also see your loan status and in the detail page you will see EMI . 
 
 
 
 
 ## Live link:
-https://tourist-website-c20e0.web.app/
+https://loan-dee13.firebaseapp.com/
